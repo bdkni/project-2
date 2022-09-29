@@ -1,0 +1,128 @@
+@font-face {
+    font-family: MontserratRegular;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: MontserratBlack;
+    src: url("../fonts/Montserrat-Black.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: MontserratRegular, sans-serif;
+    background-color: #181818;
+    background-image: url("../images/back-vector.png");
+    background-size: cover;
+
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.voice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.voice-info {
+    padding: 72px 0 86px 100px;
+}
+.voice-title {
+    max-width: 483px;
+    font-size: 56px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 59px;
+}
+.voice-description {
+    max-width: 570px;
+    font-size: 22px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.voice-description:last-child {
+    max-width: 528px;
+    margin-bottom: 40px;
+}
+.voice-impulse-text span {
+    font-family: MontserratRegular, sans-serif;
+}
+.voice-impulse-text, span.voice-impulse-text {
+    font-family: MontserratBlack, sans-serif;
+    font-size: 45px;
+    line-height: 90%;
+    color: #FFFFFF;
+}
+.voice-impulse-text:first-child {
+    margin-bottom: 18px;
+}
+span.voice-impulse-text,
+.voice-impulse-text:last-child {
+    font-size: 61px;
+}
+.voice-impulse-text:last-child {
+    margin-left: 97px;
+}
+
+.voice-image {
+    width: 842px;
+}
+.voice-image img {
+    max-width: 100%;
+}
+.animation-image img {
+    position: absolute;
+    bottom: 109px;
+    left: calc(50% - 218px);
+    animation: girl 2s linear;
+}
+.animation-image {
+    animation: girl-2 2s ease 2s infinite;
+}
+.animation-circle {
+    position: absolute;
+    bottom: 48px;
+    left: calc(50% - 97px);
+    width: 194px;
+    height: 61px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    animation: circle 1s linear;
+    z-index: -1;
+}
+@keyframes circle {
+    80% {
+        transform: scaleX(1.5);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes girl {
+    0% {
+        transform: translateY(25px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+@keyframes girl-2 {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
